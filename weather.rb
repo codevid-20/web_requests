@@ -3,7 +3,7 @@ require 'http'
 p "enter a city name"
 user_input = gets.chomp
 
-response = HTTP.get("https://api.openweathermap.org/data/2.5/weather?q=#{user_input}&units=metric&APPID=3c5ca86e43da691659345383d21f7d9b")
+response = HTTP.get("https://api.openweathermap.org/data/2.5/weather?q=#{user_input}&units=metric&APPID=")
 
 weather_data = response.parse
 
